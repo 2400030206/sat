@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Card, Table, Badge, Button, Form, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Card, Table, Button, Form, Modal } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faReply, faStar } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../common/Navbar';
@@ -7,7 +7,7 @@ import '../../assets/css/dashboard.css';
 
 const Feedback = () => {
   // Sample feedback data
-  const [feedbacks, setFeedbacks] = useState([
+  const [feedbacks] = useState([
     { id: 1, assessment: 'Midterm Exam', subject: 'Mathematics', date: '2025-10-18', teacher: 'Dr. Johnson', comment: 'Good work on the calculus problems. Need improvement in trigonometry.', rating: 4 },
     { id: 2, assessment: 'Quiz 3', subject: 'Physics', date: '2025-10-08', teacher: 'Prof. Smith', comment: 'Excellent understanding of mechanics concepts. Keep it up!', rating: 5 },
     { id: 3, assessment: 'Term Paper', subject: 'English Literature', date: '2025-11-02', teacher: 'Ms. Davis', comment: 'Well-structured essay. Work on citation format for next time.', rating: 4 },
