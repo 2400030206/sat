@@ -1,0 +1,106 @@
+/* Global Styles */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --info-color: #0dcaf0;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Use brand accents for headings */
+h1,h2,h3,h4,h5,h6{ color:var(--text); }
+
+/* Common Elements */
+.btn {
+  border-radius: 10px;
+  padding: 0.6rem 1.05rem;
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13, 20, 45, 0.06);
+}
+
+.card {
+  border: none;
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-m);
+  margin-bottom: 1.5rem;
+}
+
+.card .card-header{ background: linear-gradient(90deg,var(--brand),var(--brand-2)); color:#fff; border-radius:var(--radius-m) var(--radius-m) 0 0 }
+
+.small-muted{ color:var(--muted); font-size:0.9rem }
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .dashboard-container {
+    padding: 1rem 0;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Animation Effects */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

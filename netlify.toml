@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[dev]
+  command = "npm start"
+  port = 5173
+
+[build.environment]
+  NODE_ENV = "production"
+
+# Redirects for single-page app routing can also be placed in public/_redirects
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/students"
+  to = "/.netlify/functions/students"
+  status = 200
+
+[[redirects]]
+  from = "/api/admins"
+  to = "/.netlify/functions/admins"
+  status = 200
+
+[[redirects]]
+  from = "/api/assessments"
+  to = "/.netlify/functions/assessments"
+  status = 200

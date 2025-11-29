@@ -1,0 +1,34 @@
+/* Polished app navbar */
+.app-navbar {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+.app-navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+}
+.app-navbar .navbar-brand {
+  letter-spacing: 0.2px;
+}
+.app-navbar .nav-link {
+  color: var(--text);
+  opacity: 0.8;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link:focus {
+  color: var(--brand);
+  opacity: 1;
+}
+.app-navbar .navbar-toggler {
+  border-color: var(--border);
+}
+.logout-btn {
+  font-weight: 600;
+}

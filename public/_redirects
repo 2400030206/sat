@@ -1,0 +1,8 @@
+/*    /index.html   200
+
+# API proxy to Netlify Functions
+/api/students    /.netlify/functions/students    200
+/api/admins      /.netlify/functions/admins      200
+/api/assessments /.netlify/functions/assessments 200
+
+# Optional: you can add custom redirects here (API proxies, etc.).
